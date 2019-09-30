@@ -1,6 +1,7 @@
 @import "mq";
 @import "fonts";
 @import "palette";
+@import "scrolly";
 
 // Uncomment for embeds
 //@import "embed";
@@ -10,4 +11,39 @@
 .element-atom,
 .interactive-atom {
     margin: 0 !important;
+}
+
+.interactive-wrapper {
+
+	.cells path {
+	  fill: none;
+	  pointer-events: all;
+	}
+
+	.label {
+		font-family: 'Guardian Text Sans Web',Arial;
+		fill: #767676;
+		font-size:12px;
+	}
+
+	.labelText {
+		font-family: 'Guardian Text Sans Web',Arial;
+		fill: #767676;
+		font-size:14px;
+	}
+
+	.axis path,
+	.axis line {
+	  fill: none;
+	  stroke: #767676;
+	  shape-rendering: crispEdges;
+	}
+
+	.line {
+		fill: none;
+	}
+	
+	.tick {
+		display: none;
+	}
 }
